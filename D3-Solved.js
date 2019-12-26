@@ -53,6 +53,7 @@ Verify then, that name1 and name2 are equals if both lowercase (without changing
 var name1 = "john";
 var name2 = "John";
 
+
 if (name1 == name2) {
     result = "Names are the same";
 } else {
@@ -89,6 +90,25 @@ if ( (selectedNumber < 10) && (selectedNumber >= 0)) {
 }
 
 
+/**
+ * Alternatively:
+ * 
+ * if ( (chosenN <= 10 ) && (chosenN > 0) ){
+
+    let position = parseInt(chosenN - 1)
+    
+    var result = `the chosen number ${chosenN} ==> is ${wholeN[position]}`
+    
+    console.log(result)
+    
+    }
+    else {
+    console.log('the number is greater than 10 or  equal to 0');
+}
+ */
+
+
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 8
@@ -119,7 +139,7 @@ var myself = {
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 10
-Add to the previously created object a boolean value to rappresent wheter you have or not a driving license
+Add to the previously created object a boolean value to represent whether you have or not a driving license
 */
 
 myself.drivingLicense = true;
@@ -171,6 +191,15 @@ var totalCost = totalShoppingCart > 50 ? totalShoppingCart : totalShoppingCart +
 console.log(totalCost);
 
 
+// if (totalShoppingCart > 50){
+//    return  totalShoppingCart 
+// }
+// else{
+//     return totalShoppingCart + 10
+// }
+
+
+
 /* EXERCISE 14
 You are working for the same eCommerce. Today is the black friday and everything has a 20% discount at the end of the purchase.
 Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalShopping.
@@ -189,6 +218,10 @@ if (totalShoppingCart > 50) {
 }
 console.log (totalShoppingCart)
 
+
+/**
+ * Alternatively
+ */
 var x = 0; //example number
 var shipping = 10;
 var customer = {
@@ -205,7 +238,7 @@ function discount(value){
     return totalprice - bf_discount;  
 }
 
-console.log(discount(totalprice));
+
 
 /* EXERCISE 15
 You writing a very simple anti spam filter for your mailbox. In the variable emailContent you have the content of the email you are checking.
@@ -219,7 +252,7 @@ console.log(iFoundYouLittleSpammy)
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 16
-Create an object rapresenting an car with properties like brand, model, licensePlate.
+Create an object rapresenting a car with properties like brand, model, licensePlate.
 After you create the first car, clone it and change the licensePlate without affecting the original car.
 Do it for five cars.
 */

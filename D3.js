@@ -90,8 +90,12 @@ Create the variable X (value less than 10). Write the code to print the literal 
 //When adding a number and a string, JavaScript will treat the number as a string.
 
 var x = [0,3,6]
-    switch (x) { 																				case 0:																						console.log(" 0 ==> Zero"); 														break;
-        case 3:																						console.log(" 0 ==> Three"); 												break;	
+    switch (x) { 
+        case 0:	
+         console.log(" 0 ==> Zero");
+         break;
+        case 3:																						console.log(" 0 ==> Three");
+        break;	
         case 6:																						console.log(" 0 ==> Six"); 								
         default:
             console.log("not included or More than Ten")
@@ -111,85 +115,10 @@ Create an object containing your name, surname, email address and age.
 */
 
 /* WRITE YOUR CODE HERE */
-( condition ) ? { return for true } : { return for false }
+// ( condition ) ? { return true } : { return false }
 var number= 4;
 var moreThanTen = "more than Ten"
-var evenNumberlessThanTen= (number <= 10)?
-evenNumberlessThanTen= number < 10 ? evenNumberlessThanTen: moreThanTen;
-console.log(venNumberlessThanTen);
-/* EXERCISE 10
-Add to the previously created object a boolean value to rappresent wheter you have or not a driving license
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 11
-Remove to the previously created object the age
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 12
-Create a second object with name, surname, email address and verify that this object has a different email address
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 13 
-You are working for a eCommerce. In the variable totalShoppingCart you have the total amount spent by the current user.
-In your eCommerce you have a promotion: if the customer shopping cart is more than 50€, they can have free shipping (otherwise it costs 10€).
-Write an algorithm that calculate totalCost based on this assumption.
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 14
-You are working for the same eCommerce. Today is the black friday and everything has a 20% discount at the end of the purchase.
-Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalShopping.
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 15
-You writing a very simple anti spam filter for your mailbox. In the variable emailContent you have the content of the email you are checking.
-Check if the email is valid using regular expression. The email (in this example) if the words SPAM and SCAM does not appear.
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 16
-Create an object rapresenting an car with properties like brand, model, licensePlate.
-After you create the first car, clone it and change the licensePlate without affecting the original car.
-Do it for five cars.
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 17
-Create a new array called carsForRent containing all the cars from the previous exercise
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 18
-Remove the first and the last car from the carsForRent array.
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 19
-Print in the console, the types of a single car, of the car licensePlate and of the brand
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* EXERCISE 20
-Create a new array called carsForSale and insert 3 cars in it.
-Store in the variable totalCars the number of cars in both carsForSale and carsForRent arrays
-*/
-
-/* WRITE YOUR CODE HERE */
-
-/* WHEN YOU ARE FINISHED
-Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
-*/
+var evenNumberlessThanTen = (number <= 10)
+? evenNumberlessThanTen = number < 10 
+: evenNumberlessThanTen = moreThanTen;
+console.log(evenNumberlessThanTen);
