@@ -376,7 +376,20 @@
             return "The most expensive element is  " + JSON.stringify(max);
         }
 
+        /**
+         * Alternatively, using Arrow function and Reduce Method
+         */
 
+        var newMaxx90 = shoppingCart.reduce(
+          (prevMax, currentMax) =>
+            (prevMax.price * prevMax.number) >
+            (currentMax.price * currentMax.number)
+              ? prevMax
+              : currentMax,
+
+          0
+        );
+           
         /* WRITE YOUR CODE HERE */
 
         /* EXERCISE 15
@@ -388,10 +401,11 @@
         function latestShoppingCart (shoppingCart){
             //if an array has 10 elements, lenght will be 10 but the last element, 
             //since we start counting from 0 will be in position 9!
-            return shoppingCart[shoppingCart.length-1];
+            let lastPosition = shoppingCart.length-1
+            return shoppingCart[lastPosition];
         };
 
-
+         
         /* WRITE YOUR CODE HERE */
 
         /* EXERCISE 16
@@ -439,7 +453,7 @@
         /* WRITE YOUR CODE HERE */
 
         /* EXERCISE 18
-        Write a function "longest" to find the longest string from an given array of strings.
+        Write a function "longest" to find the longest string from a given array of strings.
         */
 
 
@@ -498,11 +512,7 @@
         "10","11","12"]
         */
 
-        function matrixGenerator(x, y) {
-            return Array.from({
-                length: x
-            }, () => new Array(y).fill(0));
-        }
+
 
         function matrixGenerator2(x, y){
             var matrix =[];
@@ -517,3 +527,12 @@
 
             return matrix;
         }
+
+
+        // function matrixGenerator(x, y) {
+        //     return Array.from({
+        //         length: x
+        //     }, () => new Array(y).fill(0));
+        // }
+
+
